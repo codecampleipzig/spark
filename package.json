@@ -1,0 +1,24 @@
+{
+  "name": "spark",
+  "version": "1.0.0",
+  "description": "> A CLI tool for keeping your sparks of inspiration lit.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielheinrich/spark.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabrielheinrich/spark/issues"
+  },
+  "homepage": "https://github.com/gabrielheinrich/spark#readme",
+  "dependencies": {}
+}
