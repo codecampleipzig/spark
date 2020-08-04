@@ -4,11 +4,17 @@ const os = require("os");
 
 const sparkFilePath = os.homedir() + "/.spark.json";
 const loadSparkFile = function () {
-  // Read the .json file
-  const fileContent = fs.readFileSync(sparkFilePath, "utf-8");
+  try {
+    // Read the .json file
+    const fileContent = fs.readFileSync(sparkFilePath, "utf-8");
 
-  // Convert the json string into an object and return it
-  return JSON.parse(fileContent);
+    // Convert the json string into an object and return it
+    return JSON.parse(fileContent);
+  } catch (error) {
+    return {
+      ideas: [],
+    };
+  }
 };
 
 const command = process.argv[2];
