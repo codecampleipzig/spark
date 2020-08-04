@@ -20,8 +20,6 @@ const storeSparkFile = function (data) {
   const fileContent = JSON.stringify(data);
   // Write the JSON string again into the file
   fs.writeFileSync(sparkFilePath, fileContent);
-
-  listSparks();
 };
 
 const createSpark = function (idea) {
@@ -33,6 +31,7 @@ const createSpark = function (idea) {
   });
 
   storeSparkFile(data);
+  listSparks();
 };
 
 const listSparks = function () {
